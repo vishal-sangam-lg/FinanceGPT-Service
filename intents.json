@@ -1,0 +1,1195 @@
+{"intents": [
+  {"tag": "greetings",
+  "patterns": ["hello","hey","hi","good day","Greetings","what's up?","how is it going?"],
+  "responses": ["Hello!","Hey!","What can I do for you?"]
+  },
+
+  {"tag": "name",
+  "patterns": ["what is your name","name","what's your name","who are you","what should I call you"],
+  "responses": ["You can call me Finance chatbot","I'm Finance chatbot","I'm Finance chatbot your virtual assistant"]
+  },
+
+  {"tag": "classes",
+  "patterns": ["how many classes will be there in a day","how long are the classes?"],
+  "responses": ["There may be 7 classes per day. Each class will be of 1 hour."]
+  },
+  {"tag": "hours",
+  "patterns": ["what are your hours","when are you guys open","what your hours of operation"],
+  "responses": ["You can message us here at any hours. But our college premises will be open from 9:00 am to 4:00 pm only."]
+  },
+  {"tag": "goodbye",
+  "patterns": ["cya","See you later","Goodbye","I am leaving","Have a Good Day","bye","see ya"],
+  "responses": ["Sad to see you go :(","Talk you later","Goodbye"]
+  },
+
+  {"tag": "invalid",
+    "patterns": ["","gvsd","asbhk"],
+    "responses": ["Sorry, can't understand you", "Please give me more info", "Not sure I understand"]
+  },
+
+  {"tag": "thanks",
+    "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me"],
+    "responses": ["Happy to help!", "Any time!", "My pleasure"]
+  },
+  {
+    "tag": "creditCardDefinition",
+    "patterns": [
+      "What is a credit card?",
+      "How does a credit card work?",
+      "Define credit card",
+      "Explain credit card",
+      "What does credit card mean?"
+    ],
+    "responses": [
+      "A credit card is a payment card issued to users to enable the cardholder to pay a merchant for goods and services based on the cardholder's promise to pay them back.",
+      "Credit cards allow consumers to borrow money from a financial institution up to a certain limit to make purchases or withdraw cash. The borrowed amount must be repaid with interest.",
+      "A credit card is a plastic card issued by a bank or financial institution that allows the cardholder to borrow funds to make purchases, with an agreement to repay the borrowed amount along with interest.",
+      "A credit card is a form of revolving credit that allows consumers to make purchases on credit. It offers a convenient and flexible way to pay for goods and services.",
+      "A credit card is a payment card that allows cardholders to borrow funds from a line of credit provided by the issuer to make purchases or cash withdrawals, subject to interest charges."
+    ]
+  },
+  {
+    "tag": "creditCardAdvantages",
+    "patterns": [
+      "What are the advantages of credit cards?",
+      "Advantages of using a credit card",
+      "Pros of credit cards",
+      "Why should I use a credit card?",
+      "Benefits of having a credit card"
+    ],
+    "responses": [
+      "Credit cards offer several advantages such as:Convenience: Credit cards allow for easy and convenient transactions without the need for cash.",
+      "- Convenience: Credit cards allow for easy and convenient transactions without the need for cash.",
+      "- Rewards: Many credit cards offer rewards programs, including cashback, points, or miles for purchases made with the card.",
+      "- Build Credit History: Responsible use of a credit card can help build a positive credit history, which is important for future financial endeavors.",
+      "- Emergency Fund: Credit cards can serve as a backup source of funds during emergencies when immediate cash is needed.",
+      "- Purchase Protection: Some credit cards provide purchase protection, which may cover the cost of damaged or stolen items purchased with the card.",
+      "- Travel Benefits: Certain credit cards offer travel-related perks such as travel insurance, airport lounge access, and waived foreign transaction fees.",
+      "- Fraud Protection: Credit cards typically offer better fraud protection compared to debit cards, as cardholders are not liable for unauthorized charges if reported promptly.",
+      "- Build Rewards: By using a credit card responsibly and paying off balances in full each month, cardholders can accumulate rewards points or cashback, providing additional value."
+    ]
+  },
+  {
+    "tag": "creditCardUses",
+    "patterns": [
+      "What are the uses of credit cards?",
+      "How can I use a credit card?",
+      "Ways to use a credit card",
+      "What can I do with a credit card?",
+      "How are credit cards used?"
+    ],
+    "responses": [
+      "Credit cards have various uses, including:",
+      "- Making Purchases: Credit cards can be used to buy goods and services at physical stores, online retailers, and for transactions over the phone.",
+      "- Cash Advances: Some credit cards allow cardholders to withdraw cash from ATMs or banks, although this often incurs high fees and interest rates.",
+      "- Building Credit: Responsible use of a credit card can help individuals establish and improve their credit history, which is important for future financial transactions such as obtaining loans or mortgages.",
+      "- Emergency Funds: Credit cards can serve as a source of emergency funds when immediate cash is needed for unexpected expenses or emergencies.",
+      "- Travel: Credit cards are commonly used for travel-related expenses such as booking flights, hotels, rental cars, and making purchases abroad.",
+      "- Rewards Accumulation: Many credit cards offer rewards programs, allowing cardholders to earn points, cashback, or miles on their purchases, which can be redeemed for various benefits.",
+      "- Online Transactions: Credit cards are widely accepted for online purchases, subscriptions, and bill payments, offering convenience and security for internet transactions."
+    ]
+  },
+  {
+    "tag": "creditCardDifferences",
+    "patterns": [
+      "What are the differences between credit cards and debit cards?",
+      "Credit cards vs debit cards",
+      "How are credit cards different from debit cards?",
+      "Differences between using a credit card and a debit card"
+    ],
+    "responses": [
+      "There are several differences between credit cards and debit cards:",
+      "- Source of Funds: With a credit card, you are borrowing money from the card issuer to make purchases and need to repay it later, while a debit card deducts funds directly from your checking or savings account.",
+      "- Repayment: Credit card purchases accrue debt that must be repaid with interest if not paid off in full by the due date, whereas debit card transactions immediately deduct funds from your account.",
+      "- Overdraft: Credit cards can lead to debt if spending exceeds the credit limit, while debit cards typically prevent overdrafts by declining transactions that exceed available funds.",
+      "- Building Credit: Responsible use of a credit card can help build or improve your credit score, whereas debit card usage does not affect credit history.",
+      "- Rewards and Benefits: Credit cards often offer rewards programs, cashback, and travel benefits, while debit cards generally do not provide such incentives.",
+      "- Security: Credit cards offer more robust fraud protection and dispute resolution processes compared to debit cards, as they are not directly linked to your bank account."
+    ]
+  },
+  {
+    "tag": "debitCardDefinition",
+    "patterns": [
+      "What is a debit card?",
+      "How does a debit card work?",
+      "Define debit card",
+      "Explain debit card",
+      "What does debit card mean?"
+    ],
+    "responses": [
+      "A debit card is a payment card that deducts money directly from a consumer's checking account to pay for a purchase.",
+      "A debit card is a plastic card issued by a bank or financial institution that allows the cardholder to make purchases using funds from their checking or savings account.",
+      "A debit card is a payment card that provides access to funds in the cardholder's bank account to make purchases or withdraw cash electronically.",
+      "A debit card is a type of payment card that allows cardholders to make transactions by debiting funds directly from their bank account."
+    ]
+  },
+  {
+    "tag": "debitCardAdvantages",
+    "patterns": [
+      "What are the advantages of debit cards?",
+      "Advantages of using a debit card",
+      "Pros of debit cards",
+      "Why should I use a debit card?",
+      "Benefits of having a debit card"
+    ],
+    "responses": [
+      "Debit cards offer several advantages such as:",
+      "- Convenience: Debit cards provide quick and easy access to funds in your bank account for purchases and withdrawals.",
+      "- No Debt: Debit cards only allow you to spend what you have in your account, reducing the risk of accumulating debt.",
+      "- Budgeting: Using a debit card helps you track your spending and stick to a budget, as transactions are deducted directly from your account.",
+      "- No Interest Charges: Debit card transactions do not accrue interest charges like credit card purchases.",
+      "- No Credit Check: Debit cards are typically available to anyone with a bank account, regardless of credit history.",
+      "- Security: Debit cards offer PIN-based security for transactions, reducing the risk of fraud compared to cash transactions."
+    ]
+  },
+  {
+    "tag": "debitCardUses",
+    "patterns": [
+      "What are the uses of debit cards?",
+      "How can I use a debit card?",
+      "Ways to use a debit card",
+      "What can I do with a debit card?",
+      "How are debit cards used?"
+    ],
+    "responses": [
+      "Debit cards have various uses, including:",
+      "- Making Purchases: Debit cards can be used to buy goods and services at physical stores, online retailers, and for transactions over the phone.",
+      "- Cash Withdrawals: Debit cards allow you to withdraw cash from ATMs or banks using your PIN.",
+      "- Paying Bills: Debit cards can be used to pay bills online or set up automatic payments for recurring expenses.",
+      "- Budgeting: Using a debit card helps you manage your finances by tracking your spending and avoiding overspending.",
+      "- Travel: Debit cards are commonly used for travel-related expenses such as booking accommodations, dining, and transportation.",
+      "- Contactless Payments: Many debit cards now support contactless payments, allowing for quick and secure transactions without the need to swipe or insert the card."
+    ]
+  },
+  {
+    "tag": "debitCardDifferences",
+    "patterns": [
+      "What are the differences between debit cards and credit cards?",
+      "Debit cards vs credit cards",
+      "How are debit cards different from credit cards?",
+      "Differences between using a debit card and a credit card"
+    ],
+    "responses": [
+      "There are several differences between debit cards and credit cards:",
+      "- Source of Funds: Debit cards use funds directly from your bank account, while credit cards allow you to borrow money from the card issuer.",
+      "- Repayment: Debit card transactions deduct funds immediately from your account, whereas credit card purchases require repayment later, with interest if not paid in full.",
+      "- Credit Check: Debit cards do not require a credit check, as they use your own funds, while credit cards may require a credit check for approval.",
+      "- Overdraft: Debit cards typically do not allow overdrafts, preventing spending beyond your available balance, while credit cards can lead to debt if spending exceeds the credit limit.",
+      "- Building Credit: Debit card usage does not affect your credit score, while responsible use of a credit card can help build or improve your credit history.",
+      "- Rewards and Benefits: Credit cards often offer rewards programs, cashback, and travel benefits, while debit cards generally do not provide such incentives.",
+      "- Security: Debit cards offer PIN-based security for transactions, while credit cards may offer additional fraud protection and dispute resolution processes."
+    ]
+  },
+      {
+        "tag": "openBankAccount",
+        "patterns": [
+          "How do I open a bank account?",
+          "What is the process of opening a bank account?",
+          "Steps to open a bank account",
+          "Can you guide me on opening a bank account?",
+          "Procedure to open a bank account"
+        ],
+        "responses": [
+          "To open a bank account, you typically need to follow these steps:Visit the Bank: Visit the bank branch or apply online through the bank's website.,Choose a Bank: Research and select a bank that suits your needs and preferences.,Provide Identification: Bring valid identification documents such as a passport, driver's license, or ID card.,Fill out Application: Complete the bank account application form with personal details and contact information.,Deposit Funds: Make an initial deposit as required by the bank to activate the account.,Review Terms and Conditions: Read and understand the terms and conditions of the account, including fees and features.,Receive Account Details: Once approved, you will receive account details such as an account number and debit card."
+  
+        ]
+      },
+      {
+        "tag": "bankAccountTypes",
+        "patterns": [
+          "What types of bank accounts are there?",
+          "Types of accounts offered by banks",
+          "Can you explain the different bank account options?",
+          "What are the different kinds of bank accounts?",
+          "Varieties of bank accounts available"
+        ],
+        "responses": [
+          "Banks offer various types of accounts to cater to different financial needs and goals. Some common types :Savings Account,Checking Account,Money Market Account,Certificate of Deposit (CD),Individual Retirement Account (IRA),Business Account,Joint Account",
+          "- Savings Account: Designed for saving money and earning interest on deposits.",
+          "- Checking Account: Used for everyday transactions such as paying bills and making purchases.",
+          "- Money Market Account: Offers higher interest rates than savings accounts and may have limited check-writing abilities.",
+          "- Certificate of Deposit (CD): Provides fixed interest rates for a specified term in exchange for locking funds.",
+          "- Individual Retirement Account (IRA): A retirement savings account with tax advantages and investment options.",
+          "- Joint Account: Shared by two or more individuals, allowing them to manage finances together.",
+          "- Business Account: Designed for business owners to manage finances related to their business operations."
+        ]
+      },
+      {
+        "tag": "bankAccountBenefits",
+        "patterns": [
+          "What are the benefits of having a bank account?",
+          "Advantages of having a bank account",
+          "Why should I open a bank account?",
+          "Pros of having a bank account",
+          "What do I gain from having a bank account?"
+        ],
+        "responses": [
+          "Having a bank account offers several benefits, including:",
+          "- Safekeeping: Banks provide a secure place to store money and protect it from theft or loss.",
+          "- Convenience: Bank accounts offer easy access to funds for everyday transactions, bill payments, and online purchases.",
+          "- Interest Earnings: Savings accounts may earn interest on deposited funds, helping to grow savings over time.",
+          "- Payment Methods: Bank accounts enable various payment methods such as checks, debit cards, and online transfers.",
+          "- Financial Management: Bank statements and online banking tools help track spending, manage budgets, and monitor account activity.",
+          "- Access to Services: Banks offer additional services such as loans, credit cards, investment options, and financial advice."
+        ]
+      },
+      {
+        "tag": "bankAccountFees",
+        "patterns": [
+          "What fees are associated with bank accounts?",
+          "Are there any charges for having a bank account?",
+          "Can you explain the fees for bank accounts?",
+          "Do bank accounts come with any costs?",
+          "Are there any expenses related to bank accounts?"
+        ],
+        "responses": [
+          "Bank accounts may have various fees associated with them, including:",
+          "- Monthly Maintenance Fee: Charged for maintaining the account, often waived with a minimum balance.",
+          "- Overdraft Fee: Levied when account balance goes negative due to insufficient funds.",
+          "- ATM Fees: Charged for using ATMs outside the bank's network or international withdrawals.",
+          "- Transaction Fees: Applied to certain types of transactions such as wire transfers, stop payments, or check orders.",
+          "- Minimum Balance Fee: Incurred if the account balance falls below a specified minimum amount.",
+          "- Paper Statement Fee: Charged for receiving paper statements instead of opting for electronic statements.",
+          "- Foreign Transaction Fee: Applied for transactions made in foreign currencies or outside the country."
+        ]
+      },
+      {
+        "tag": "closeBankAccount",
+        "patterns": [
+          "How can I close my bank account?",
+          "What is the process for closing a bank account?",
+          "Steps to close a bank account",
+          "Can you guide me on closing my bank account?",
+          "Procedure to close a bank account"
+        ],
+        "responses": [
+          "To close a bank account, you typically need to follow these steps:",
+          "- Review Account: Check for any pending transactions or automatic payments linked to the account.",
+          "- Visit the Bank: Visit the bank branch in person or contact customer service to initiate the account closure process.",
+          "- Fill out Forms: Complete any required forms or documentation for closing the account.",
+          "- Settle Balances: Ensure the account has a zero balance by withdrawing"
+        ]
+      },
+      {
+        "tag": "typesOfInsurance",
+        "patterns": [
+          "What types of insurance do I need?",
+          "Which insurance policies should I consider?",
+          "Types of insurance required",
+          "What kinds of insurance are essential?",
+          "Insurance options I should have"
+        ],
+        "responses": [
+          "There are several types of insurance you may need, depending on your circumstances. Some common types include:",
+          "- Health Insurance",
+          "- Car Insurance",
+          "- Home Insurance",
+          "- Life Insurance",
+          "Each serves different purposes and provides coverage for specific risks."
+        ]
+      },
+      {
+        "tag": "insuranceCoverage",
+        "patterns": [
+          "What does each type of insurance cover?",
+          "What are the coverage details for different insurances?",
+          "What risks are covered by each insurance type?",
+          "Explanation of insurance coverage"
+        ],
+        "responses": [
+          "Each type of insurance provides coverage for different risks:",
+          "- Health Insurance: Covers medical expenses, including hospitalization, doctor visits, and prescription drugs.",
+          "- Car Insurance: Offers financial protection against vehicle damage, accidents, and liability for injuries or property damage.",
+          "- Home Insurance: Protects against damage or loss to your home and belongings due to perils like fire, theft, or natural disasters.",
+          "- Life Insurance: Provides a payout to beneficiaries upon the policyholder's death, helping cover expenses and replace lost income."
+        ]
+      },
+      {
+        "tag": "coverageLevels",
+        "patterns": [
+          "What are the different levels of coverage available for each type of insurance?",
+          "Levels of coverage for insurance policies",
+          "Coverage options for each insurance type",
+          "How do coverage levels vary?"
+        ],
+        "responses": [
+          "Insurance coverage levels vary based on factors such as policy limits, deductibles, and optional add-ons:",
+          "- Health Insurance: Coverage options may include basic plans with essential benefits or comprehensive plans with additional services.",
+          "- Car Insurance: Levels can range from basic liability coverage to full coverage including collision and comprehensive protection.",
+          "- Home Insurance: Options include standard policies for basic coverage or enhanced policies with higher limits and additional endorsements.",
+          "- Life Insurance: Coverage amounts vary based on factors such as policy type, term length, and desired death benefit."
+        ]
+      },
+      {
+        "tag": "coverageAmount",
+        "patterns": [
+          "How much coverage do I need?",
+          "Determining the right insurance coverage amount",
+          "What factors influence the required coverage?",
+          "How to calculate insurance coverage"
+        ],
+        "responses": [
+          "Determining the appropriate coverage amount depends on factors such as:",
+          "- Health Insurance: Consider your medical needs, anticipated expenses, and budget when selecting coverage levels.",
+          "- Car Insurance: Evaluate the value of your vehicle, your driving habits, and your financial situation to determine appropriate coverage.",
+          "- Home Insurance: Assess the value of your home and possessions, as well as potential risks in your area, to determine coverage limits.",
+          "- Life Insurance: Calculate your financial obligations, future expenses, and income replacement needs to determine the appropriate death benefit."
+        ]
+      },
+      {
+        "tag": "fileClaim",
+        "patterns": [
+          "How do I file a claim?",
+          "Process for filing an insurance claim",
+          "Steps to submit an insurance claim",
+          "What to do when filing a claim"
+        ],
+        "responses": [
+          "To file an insurance claim, follow these general steps:",
+          "- Contact Insurer: Notify your insurance company as soon as possible after the incident or event.",
+          "- Provide Details: Provide relevant information such as policy details, incident description, and supporting documentation.",
+          "- Submit Documentation: Complete and submit any required claim forms and supporting documents.",
+          "- Cooperate with Investigation: Work with your insurer and provide any additional information or documentation requested during the claims process."
+        ]
+      },
+      {
+        "tag": "claimDocuments",
+        "patterns": [
+          "What documents do I need to file a claim?",
+          "Required paperwork for filing an insurance claim",
+          "Documentation necessary for insurance claims",
+          "What should I prepare when filing a claim?"
+        ],
+        "responses": [
+          "When filing an insurance claim, you may need the following documents:",
+          "- Policy Information: Your insurance policy details, including policy number and coverage limits.",
+          "- Incident Report: Description of the event or incident leading to the claim, including date, time, and location.",
+          "- Supporting Evidence: Any relevant documentation such as photos, receipts, police reports, or medical records.",
+          "- Claim Form: Completed claim form provided by your insurance company, detailing the nature of the claim."
+        ]
+      },
+      {
+        "tag": "claimProcessingTime",
+        "patterns": [
+          "How long does it take to process a claim?",
+          "Duration for processing insurance claims",
+          "Typical claim processing time",
+          "When will my claim be processed?"
+        ],
+        "responses": [
+          "Claim processing time varies depending on factors such as the complexity of the claim, insurer's procedures, and documentation provided:",
+          "- Simple claims may be processed within a few days, while complex claims may take several weeks or longer.",
+          "- Insurers aim to process claims efficiently while ensuring accuracy and compliance with regulations.",
+          "- You can inquire with your insurance company for an estimated timeline for your specific claim."
+        ]
+      },
+      {
+        "tag": "claimDenial",
+        "patterns": [
+          "What happens if my claim is denied?",
+          "Reasons for insurance claim denial",
+          "What to do if my claim is rejected?",
+          "My claim was denied, what now?"
+        ],
+        "responses": [
+          "If your insurance claim is denied, take the following steps:",
+          "- Review Denial Reason: Understand the reason provided by the insurer for the claim denial.",
+          "- Appeal Process: Check if your policy allows for appeals and follow the insurer's procedures for challenging the denial.",
+          "- Seek Assistance: Consider seeking guidance from a legal or insurance professional to explore your options.",
+          "- Review Alternatives: Explore alternative solutions or coverage options to address your needs if necessary."
+        ]
+      },
+      {
+      "tag": "loanTypes",
+      "patterns": [
+        "What types of loans are available?",
+        "Types of loans I can get",
+        "What kinds of loans exist?",
+        "Loan options"
+      ],
+      "responses": [
+        "There are various types of loans available, including:",
+        "- Mortgage Loan",
+        "- Auto Loan",
+        "- Personal Loan",
+        "- Student Loan",
+        "Each type serves different purposes and may have specific eligibility requirements."
+      ]
+    },
+    {
+      "tag": "loanPurpose",
+      "patterns": [
+        "What can I use a loan for?",
+        "Purposes of taking out a loan",
+        "What are the common uses for loans?",
+        "Can I use a loan for?"
+      ],
+      "responses": [
+        "Loans can be used for various purposes, including:",
+        "- Buying a Home (Mortgage Loan)",
+        "- Purchasing a Car (Auto Loan)",
+        "- Financing Personal Expenses (Personal Loan)",
+        "- Funding Education (Student Loan)",
+        "Ensure to use the loan for its intended purpose and manage repayments responsibly."
+      ]
+    },
+    {
+      "tag": "bestLoanType",
+      "patterns": [
+        "Which loan type is best suited for my needs?",
+        "What loan option is right for me?",
+        "Choosing the right loan type",
+        "Best loan for my situation"
+      ],
+      "responses": [
+        "The best loan type for your needs depends on factors such as:",
+        "- Purpose of the loan",
+        "- Amount needed",
+        "- Repayment terms",
+        "- Interest rates",
+        "Consider comparing options and consulting with a financial advisor to determine the most suitable loan for your situation."
+      ]
+    },
+    {
+      "tag": "loanEligibility",
+      "patterns": [
+        "Am I eligible for a loan?",
+        "Loan eligibility criteria",
+        "Do I qualify for a loan?",
+        "Can I get a loan?"
+      ],
+      "responses": [
+        "Loan eligibility depends on various factors, including:",
+        "- Credit score",
+        "- Income level",
+        "- Employment status",
+        "- Debt-to-income ratio",
+        "Lenders assess these factors to determine your eligibility for a loan."
+      ]
+    },
+    {
+      "tag": "loanRequirements",
+      "patterns": [
+        "What are the requirements to qualify for a loan?",
+        "Criteria for loan approval",
+        "Loan qualification requirements",
+        "What do I need to get a loan?"
+      ],
+      "responses": [
+        "To qualify for a loan, you typically need to meet certain requirements, including:Good credit score,Stable income,Low debt-to-income ratio,Required documentation (e.g., ID proof, income documents),Meeting these requirements increases your chances of loan approval."
+        
+      ]
+    },
+    {
+      "tag": "loanDocuments",
+      "patterns": [
+        "What documents do I need to apply for a loan?",
+        "Required paperwork for loan application",
+        "Documents needed for loan approval",
+        "What should I prepare when applying for a loan?"
+      ],
+      "responses": [
+        "When applying for a loan, you typically need to provide the following documents:",
+        "- Identification Proof (e.g., Driver's License, Passport)",
+        "- Proof of Income (e.g., Pay Stubs, Tax Returns)",
+        "- Bank Statements",
+        "- Employment Verification",
+        "Ensure to submit accurate and complete documentation to expedite the loan approval process."
+      ]
+    },
+    {
+      "tag": "loanInterestRate",
+      "patterns": [
+        "What is the interest rate on the loan?",
+        "Loan interest rate details",
+        "How much interest will I pay on the loan?",
+        "Interest rate information for loans"
+      ],
+      "responses": [
+        "The interest rate on a loan depends on factors such as:",
+        "- Type of loan",
+        "- Lender's policies",
+        "- Your creditworthiness",
+        "- Market conditions",
+        "Interest rates can be fixed or variable and may vary among lenders."
+      ]
+    },
+    {
+      "tag": "loanTerms",
+      "patterns": [
+        "What are the different loan terms?",
+        "Repayment period options for loans",
+        "Loan duration details",
+        "Term lengths for loans"
+      ],
+      "responses": [
+        "Loan terms refer to the duration over which you repay the loan. Common terms include:",
+        "- Short-Term (typically less than 2 years)",
+        "- Medium-Term (2 to 5 years)",
+        "- Long-Term (more than 5 years)",
+        "Choose a term that aligns with your financial goals and repayment capabilities."
+      ]
+    },
+    {
+      "tag": "loanFees",
+      "patterns": [
+        "What are the fees associated with the loan?",
+        "Loan-related charges",
+        "Fee details for loans",
+        "Costs of taking out a loan"
+      ],
+      "responses": [
+        "There may be various fees associated with a loan, including: Origination Fee,Prepayment Penalty,Late Payment Fee,Annual Percentage Rate (APR)",
+        "Review the loan terms and disclosures to understand the fees involved."
+      ]
+    },
+    {
+      "tag": "monthlyPayment",
+      "patterns": [
+        "What is the monthly payment amount?",
+        "Monthly installment details",
+        "How much do I need to pay each month?",
+        "Monthly payment calculation"
+      ],
+      "responses": [
+        "The monthly payment amount depends on factors such as:Loan amount,Interest rate,Loan term,",
+        "You can use loan calculators or consult with lenders to estimate your monthly payments."
+      ]
+    },
+    {
+      "tag": "compareLoanOffers",
+      "patterns": [
+        "How can I compare loan offers from different lenders?",
+        "Comparing loan options",
+        "What factors should I consider when comparing loans?",
+        "Choosing between multiple loan offers"
+      ],
+      "responses": [
+        "When comparing loan offers, consider the following factors:Interest rates,Fees and charges,Repayment terms,Flexibility of terms,Comparing multiple offers helps you find the most favorable loan terms for your needs."
+      ]
+    },
+    {
+      "tag": "makeLoanPayments",
+      "patterns": [
+        "How do I make loan payments?",
+        "Loan repayment methods",
+        "Ways to pay back a loan",
+        "Making payments towards a loan"
+      ],
+      "responses": [
+        "You can make loan payments through various methods",
+        "- Online payments through the lender's website",
+        "- Automatic deductions from your bank account",
+        "- Mail-in payments with a check or money order",
+        "- In-person payments at a branch or authorized location",
+        "Choose a payment method that is convenient and ensures timely repayments."
+      ]
+    },
+    {
+      "tag": "stocksDefinition",
+      "patterns": [
+        "What are stocks and how do they work?",
+        "Definition of stocks",
+        "How do stocks function?",
+        "Explanation of stocks"
+      ],
+      "responses": [
+        "Stocks represent ownership in a company.",
+        "When you buy stocks, you become a shareholder and have a stake in the company's success.",
+        "Stocks can be bought and sold on stock exchanges."
+      ]
+    },
+    {
+      "tag": "stockVsShare",
+      "patterns": [
+        "What is the difference between a stock and a share?",
+        "Stock vs share comparison",
+        "Clarification on stocks and shares",
+        "Distinguishing between stocks and shares"
+      ],
+      "responses": [
+        "In financial terms, 'stock' and 'share' are often used interchangeably.",
+        "A 'stock' refers to the collective ownership of a company, while a 'share' represents an individual unit of ownership within that stock.",
+        "Therefore, owning a share means you own a part of the company's stock."
+      ]
+    },
+    {
+      "tag": "stockInvesting",
+      "patterns": [
+        "How does investing in stocks work?",
+        "Stock investment process",
+        "Explanation of stock investing",
+        "Getting started with stock investing"
+      ],
+      "responses": [
+        "Investing in stocks involves purchasing shares of publicly traded companies with the expectation of earning a return on investment (ROI).",
+        "Stock prices fluctuate based on supply and demand, company performance, and market conditions.",
+        "Investors aim to buy stocks at a low price and sell them at a higher price to profit."
+      ]
+    },
+    {
+      "tag": "stockMarket",
+      "patterns": [
+        "What is the stock market and how does it function?",
+        "Explanation of stock market",
+        "How does the stock market operate?",
+        "Understanding the stock market"
+      ],
+      "responses": [
+        "The stock market is a platform where stocks and other securities are bought and sold.",
+        "It serves as a marketplace for investors and companies to trade financial instruments.",
+        "Stock prices are determined by the forces of supply and demand, influenced by various factors such as economic indicators, company performance, and investor sentiment."
+      ]
+    },
+    {
+      "tag": "stockMarketTerms",
+      "patterns": [
+        "What are some common stock market terms?",
+        "Explanation of stock market jargon",
+        "Clarification on stock market terms",
+        "Common terms used in the stock market"
+      ],
+      "responses": [
+        "Some common stock market terms include:Bull Market,Bear Market,Market Cap,P/E Ratio (Price-to-Earnings Ratio),Volatility,Understanding these terms is essential for navigating the stock market"
+      ]
+    },
+    {
+      "tag": "buySellStocks",
+      "patterns": [
+        "How do I buy and sell stocks?",
+        "Process of buying and selling stocks",
+        "Buying and selling stocks explained",
+        "Executing stock trades"
+      ],
+      "responses": [
+        "To buy and sell stocks, you typically need to open a brokerage account with a licensed broker.",
+        "Once your account is set up, you can place buy or sell orders through the broker's trading platform or app.",
+        "Transactions are executed based on current market prices and order instructions."
+      ]
+    },
+    {
+      "tag": "startInvesting",
+      "patterns": [
+        "How much money do I need to start investing in stocks?",
+        "Minimum investment for stocks",
+        "Starting capital for stock investing",
+        "Investment amount required for stocks"
+      ],
+      "responses": [
+        "The amount of money needed to start investing in stocks varies depending on factors such as:Brokerage account minimums,Stock prices,Investment goals,Some brokers offer low-cost or fractional shares, making it easier for beginners to start investing with small amounts."
+      ]
+    },
+    {
+      "tag": "stockInvestmentRisks",
+      "patterns": [
+        "What are the risks involved in stock investing?",
+        "Understanding stock investment risks",
+        "Potential dangers of stock investing",
+        "Risks associated with investing in stocks"
+      ],
+      "responses": [
+        "Stock investing carries various risks, including:Market volatility,Company-specific risks,Economic downturns,Loss of investment principal,Investors should assess their risk tolerance and diversify their portfolios to mitigate risks."
+      ]
+    },
+    {
+      "tag": "diversifyPortfolio",
+      "patterns": [
+        "How can I diversify my stock portfolio?",
+        "Portfolio diversification strategies",
+        "Diversifying stock investments",
+        "Spreading risk in stock portfolio"
+      ],
+      "responses": [
+        "Diversifying your stock portfolio involves investing in a variety of stocks across different industries and sectors.",
+        "This helps reduce the impact of individual stock volatility on your overall portfolio.",
+        "Other diversification strategies include investing in bonds, mutual funds, and ETFs."
+      ]
+    },
+    {
+      "tag": "investmentStrategies",
+      "patterns": [
+        "What are some investment strategies for beginners?",
+        "Beginner-friendly stock investment strategies",
+        "Simple stock investment approaches",
+        "Easy strategies for novice investors"
+      ],
+      "responses": [
+        "Some investment strategies for beginners include:Dollar-cost averaging (regularly investing fixed amounts),Index fund or ETF investing (diversifying with low-cost funds),Buy and hold strategy (long-term investment horizon),Start with a strategy aligned with your financial goals and risk tolerance."
+      ]
+    },
+    {
+      "tag": "inflationDefinition",
+      "patterns": [
+        "What is inflation and how does it affect me?",
+        "Understanding inflation and its impact",
+        "How does inflation affect purchasing power?",
+        "Basic concept of inflation"
+      ],
+      "responses": [
+        "Inflation refers to the increase in the general price level of goods and services over time. Its impact includes:",
+        "- Reducing the purchasing power of money",
+        "- Eroding savings and investments",
+        "- Influencing interest rates and economic decisions",
+        "Understanding inflation helps individuals make informed financial decisions."
+      ]
+    },
+    {
+      "tag": "inflationMeasurement",
+      "patterns": [
+        "How is inflation measured?",
+        "Determining inflation rates",
+        "Curiosity about inflation measurement",
+        "Methods to measure inflation"
+      ],
+      "responses": [
+        "Inflation is typically measured using various indicators, including:",
+        "- Consumer Price Index (CPI)",
+        "- Producer Price Index (PPI)",
+        "- Gross Domestic Product (GDP) deflator",
+        "These indicators track changes in prices of goods and services over time to calculate inflation rates."
+      ]
+    },
+    {
+      "tag": "inflationCauses",
+      "patterns": [
+        "What are the causes of inflation?",
+        "Factors driving inflation",
+        "Reasons behind inflation",
+        "Understanding inflation triggers"
+      ],
+      "responses": [
+        "Several factors contribute to inflation, including:",
+        "- Demand-Pull Inflation (increased demand exceeding supply)",
+        "- Cost-Push Inflation (rising production costs)",
+        "- Monetary Policy (actions by central banks)",
+        "- Supply Chain Disruptions",
+        "Understanding these causes helps in analyzing inflationary trends and formulating strategies."
+      ]
+    },
+    {
+      "tag": "inflationProtection",
+      "patterns": [
+        "What are some ways to protect myself from inflation?",
+        "Managing finances during inflation",
+        "Protecting assets from inflation",
+        "Strategies to mitigate inflation impact"
+      ],
+      "responses": [
+        "To protect against inflation, consider the following strategies:",
+        "- Investing in assets that typically perform well during inflation (e.g., real estate, commodities)",
+        "- Diversifying investment portfolios",
+        "- Investing in inflation-indexed securities",
+        "- Reviewing and adjusting budgets regularly",
+        "These measures help safeguard finances and maintain purchasing power."
+      ]
+    },
+
+    {
+      "tag": "personalLoanQualification",
+      "patterns": [
+        "What is the minimum credit score required for a personal loan?",
+        "Credit score for personal loan qualification",
+        "Qualification criteria for personal loans"
+      ],
+      "responses": [
+        "The minimum credit score required for a personal loan varies by lender but is typically around 600 to 640."
+      ]
+    },
+    {
+      "tag": "personalLoanDocuments",
+      "patterns": [
+        "What documents do I need to apply for a personal loan?",
+        "Documentation required for personal loan application",
+        "Personal loan application paperwork"
+      ],
+      "responses": [
+        "Common documents needed for a personal loan application include proof of identity, income verification, employment history, and credit history."
+      ]
+    },
+    {
+      "tag": "homeLoanDownPayment",
+      "patterns": [
+        "What is the minimum down payment required for a home loan?",
+        "Down payment for home loan qualification",
+        "Minimum home loan down payment"
+      ],
+      "responses": [
+        "The minimum down payment required for a home loan typically ranges from 3% to 20%, depending on factors like loan type and lender requirements."
+      ]
+    },
+    {
+      "tag": "mortgageCreditScore",
+      "patterns": [
+        "What credit score is needed for a good interest rate on a mortgage?",
+        "Credit score for good mortgage interest rate",
+        "Mortgage interest rate based on credit score"
+      ],
+      "responses": [
+        "To secure a good interest rate on a mortgage, a credit score of 700 or higher is generally recommended."
+      ]
+    },
+    {
+      "tag": "homeLoanDocumentation",
+      "patterns": [
+        "What type of income documentation is needed for a home loan?",
+        "Income documentation for home loan application",
+        "Home loan income verification"
+      ],
+      "responses": [
+        "Income documentation for a home loan typically includes pay stubs, tax returns, W-2 forms, and bank statements."
+      ]
+    },
+    {
+      "tag": "homeLoanTypes",
+      "patterns": [
+        "What are the different types of home loans available?",
+        "Types of home loan options",
+        "Fixed vs. adjustable rate mortgages"
+      ],
+      "responses": [
+        "Common types of home loans include fixed-rate mortgages, adjustable-rate mortgages (ARMs), FHA loans, VA loans, and USDA loans."
+      ]
+    },
+    {
+      "tag": "carLoanDownPayment",
+      "patterns": [
+        "What is the typical down payment required for a car loan?",
+        "Down payment for car loan qualification",
+        "Car loan down payment amount"
+      ],
+      "responses": [
+        "The typical down payment required for a car loan ranges from 10% to 20% of the vehicle's purchase price."
+      ]
+    },
+    {
+      "tag": "carLoanCreditScore",
+      "patterns": [
+        "How does my credit score affect the interest rate on a car loan?",
+        "Impact of credit score on car loan interest rate",
+        "Credit score influence on auto loan rates"
+      ],
+      "responses": [
+        "Your credit score significantly affects the interest rate on a car loan. A higher credit score typically qualifies you for lower interest rates."
+      ]
+    },
+    {
+      "tag": "carLoanDocuments",
+      "patterns": [
+        "What documents do I need for a car loan application?",
+        "Documentation required for auto loan application",
+        "Car loan application paperwork"
+      ],
+      "responses": [
+        "Documents needed for a car loan application include proof of identity, income verification, employment details, and vehicle information."
+      ]
+    },
+    {
+      "tag": "studentLoanEligibility",
+      "patterns": [
+        "What are the eligibility criteria for federal vs. private student loans?",
+        "Federal vs. private student loan eligibility",
+        "Requirements for federal and private student loans"
+      ],
+      "responses": [
+        "Federal student loans have more flexible eligibility criteria and do not require a credit check, while private student loans often require a creditworthy cosigner and have stricter eligibility requirements."
+      ]
+    },
+    {
+      "tag": "studentLoanDocumentation",
+      "patterns": [
+        "What types of documentation are required for student loan applications?",
+        "Documentation needed for student loan application",
+        "Student loan application paperwork"
+      ],
+      "responses": [
+        "Documentation required for student loan applications includes proof of enrollment, financial aid forms, income verification, and personal identification documents."
+      ]
+    },
+    {
+      "tag": "studentLoanInterestRates",
+      "patterns": [
+        "What are the typical interest rates for federal and private student loans?",
+        "Interest rates for federal vs. private student loans",
+        "private student loan interest rates"
+      ],
+      "responses": [
+        "Federal student loan interest rates are fixed and set by the government, while private student loan interest rates vary depending on factors like creditworthiness and market conditions."
+      ]
+    },
+    {
+      "tag": "scholarshipsAndGrants",
+      "patterns": [
+        "How can I maximize my eligibility for scholarships and grants?",
+        "Maximizing scholarship and grant opportunities",
+        "Strategies for obtaining scholarships and grants"
+      ],
+      "responses": [
+        "To maximize eligibility for scholarships and grants, consider researching and applying for multiple opportunities, maintaining academic excellence, and demonstrating leadership and community involvement."
+      ]
+    },
+    {
+      "tag": "expenseTypes",
+      "patterns": [
+        "What are the different types of expenses?",
+        "Types of expenses",
+        "Expense categories"
+      ],
+      "responses": [
+        "Common types of expenses include fixed expenses (e.g., rent, mortgage), variable expenses (e.g., groceries, entertainment), discretionary expenses (e.g., dining out, vacations), and non-discretionary expenses (e.g., utility bills, insurance premiums)."
+      ]
+    },
+    {
+      "tag": "expenseCategorization",
+      "patterns": [
+        "How can I categorize my expenses?",
+        "Expense categorization methods",
+        "Organizing expenses"
+      ],
+      "responses": [
+        "You can categorize your expenses based on their nature or purpose, such as housing, transportation, food, utilities, entertainment, and savings."
+      ]
+    },
+    {
+      "tag": "expenseVsCost",
+      "patterns": [
+        "What is the difference between an expense and a cost?",
+        "Expense vs. cost comparison",
+        "Distinguishing between expenses and costs"
+      ],
+      "responses": [
+        "An expense refers to the money spent on goods or services consumed, while a cost is the amount incurred to produce or acquire something. Expenses are typically recurring and related to ongoing operations, while costs may include one-time investments or purchases."
+      ]
+    },
+    {
+      "tag": "saveOnExpenses",
+      "patterns": [
+        "How can I save money on everyday expenses?",
+        "Tips for saving on expenses",
+        "Reducing everyday expenses"
+      ],
+      "responses": [
+        "You can save money on everyday expenses by budgeting wisely, comparison shopping, using coupons or discount codes, buying in bulk, avoiding impulse purchases, and reducing discretionary spending."
+      ]
+    },
+    {
+      "tag": "spendingPlanCreation",
+      "patterns": [
+        "How can I create a realistic spending plan?",
+        "Creating a budget plan",
+        "Steps to develop a spending plan"
+      ],
+      "responses": [
+        "To create a realistic spending plan, start by tracking your current expenses, setting financial goals, categorizing expenses, allocating funds for each category, prioritizing essential expenses, and adjusting your plan as needed based on your income and expenses."
+      ]
+    },
+    {
+      "tag": "hiddenExpenses",
+      "patterns": [
+        "Where can I find hidden expenses in my budget?",
+        "Identifying hidden expenses",
+        "Uncovering hidden costs in budget"
+      ],
+      "responses": [
+        "Hidden expenses in your budget may include subscription fees, bank charges, late payment fees, impulse purchases, ATM fees, maintenance costs, and membership dues. Reviewing your bank statements and tracking expenses diligently can help identify these hidden costs."
+      ]
+    },
+    {
+      "tag": "lifeInsuranceDefinition",
+      "patterns": [
+        "What is life insurance and how does it work?",
+        "Understanding life insurance",
+        "Explanation of life insurance"
+      ],
+      "responses": [
+        "Life insurance is a contract between an individual and an insurance company where the insurer promises to pay a designated beneficiary a sum of money upon the death of the insured person. It provides financial protection to the insured's family or dependents in case of their untimely death."
+      ]
+    },
+    {
+      "tag": "needForLifeInsurance",
+      "patterns": [
+        "Do I need life insurance?",
+        "Is life insurance necessary?",
+        "Should I get life insurance?"
+      ],
+      "responses": [
+        "Whether you need life insurance depends on your financial situation, family needs, and long-term goals. Life insurance can provide financial security for your loved ones in the event of your death, particularly if you have dependents or outstanding debts."
+      ]
+    },
+    {
+      "tag": "typesOfLifeInsurance",
+      "patterns": [
+        "What are the different types of life insurance?",
+        "Types of life insurance policies",
+        "Life insurance options"
+      ],
+      "responses": [
+        "There are several types of life insurance, including term life insurance, whole life insurance, universal life insurance, and variable life insurance. Each type offers different features, benefits, and coverage options to meet various financial needs and goals."
+      ]
+    },
+    {
+      "tag": "differenceSavingInvesting",
+      "patterns": [
+        "What is the difference between saving and investing?",
+        "Saving vs investing",
+        "Distinguishing saving and investing"
+      ],
+      "responses": [
+        "Saving involves setting aside money for short-term goals or emergencies, typically in low-risk accounts like savings accounts or certificates of deposit (CDs). Investing, on the other hand, involves putting money into assets such as stocks, bonds, or real estate with the expectation of generating returns over the long term."
+      ]
+    },
+    {
+      "tag": "importanceOfSaving",
+      "patterns": [
+        "Why is it important to save money?",
+        "Benefits of saving",
+        "Reasons to save"
+      ],
+      "responses": [
+        "Saving money is crucial for financial stability and achieving long-term goals. It provides a financial safety net for emergencies, helps you reach major milestones such as buying a home or retiring comfortably, and provides peace of mind knowing you have funds available when needed."
+      ]
+    },
+    {
+      "tag": "savingsGoals",
+      "patterns": [
+        "What are different savings goals I can work towards?",
+        "Types of savings goals",
+        "Setting savings objectives"
+      ],
+      "responses": [
+        "Savings goals can vary based on individual needs and priorities. Common savings goals include building an emergency fund, saving for a down payment on a house, funding education expenses, preparing for retirement, and achieving financial independence."
+      ]
+    },
+    {
+      "tag": "amountToSave",
+      "patterns": [
+        "How much money should I be saving?",
+        "Determining savings amount",
+        "Calculating savings target"
+      ],
+      "responses": [
+        "The amount you should save depends on your income, expenses, financial goals, and risk tolerance. As a general rule, financial experts often recommend saving at least 10-20% of your income, but the exact percentage may vary based on individual circumstances and priorities."
+      ]
+    },
+    {
+      "tag": "bestPlaceToSave",
+      "patterns": [
+        "Where is the best place to save my money?",
+        "Best savings accounts",
+        "Choosing a savings account"
+      ],
+      "responses": [
+        "The best place to save money depends on your financial goals, risk tolerance, and liquidity needs. Options include traditional savings accounts, high-yield savings accounts, money market accounts, certificates of deposit (CDs), and retirement accounts such as IRAs or 401(k)s."
+      ]
+    },
+    {
+      "tag": "effectiveWaysToSave",
+      "patterns": [
+        "What are some effective ways to save money?",
+        "Saving money tips",
+        "Ways to cut expenses"
+      ],
+      "responses": [
+        "Some effective ways to save money include creating a budget, tracking expenses, prioritizing needs over wants, automating savings contributions, reducing discretionary spending, taking advantage of discounts and coupons, and avoiding unnecessary debt."
+      ]
+    },
+    {
+      "tag": "developGoodSavingHabits",
+      "patterns": [
+        "How can I develop good savings habits?",
+        "Building saving habits",
+        "Creating a savings routine"
+      ],
+      "responses": [
+        "Developing good savings habits involves setting clear financial goals, creating a budget, paying yourself first by saving a portion of your income before spending, avoiding impulse purchases, regularly reviewing and adjusting your savings plan, and staying disciplined and consistent over time."
+      ]
+    },
+    {
+      "tag": "legalWaysToReduceTax",
+      "patterns": [
+        "What are some legal ways to reduce my tax liability?",
+        "Tax reduction strategies",
+        "Minimizing tax liability legally"
+      ],
+      "responses": [
+        "Some legal ways to reduce tax liability include maximizing deductions, taking advantage of tax-advantaged accounts like retirement plans and HSAs, utilizing tax credits, donating to charity, investing in tax-exempt securities, and structuring income and expenses strategically."
+      ]
+    },
+    {
+      "tag": "taxDeductionVsCredit",
+      "patterns": [
+        "What is the difference between a tax deduction and a tax credit?",
+        "Tax deduction vs tax credit",
+        "Understanding tax deduction and credit"
+      ],
+      "responses": [
+        "A tax deduction reduces taxable income, resulting in a lower tax bill based on your marginal tax rate. In contrast, a tax credit directly reduces the amount of tax owed, providing a dollar-for-dollar reduction in tax liability."
+      ]
+    },
+    {
+      "tag": "taxFilingDeadline",
+      "patterns": [
+        "When is the tax filing deadline?",
+        "Tax return due date",
+        "Deadline for filing taxes"
+      ],
+      "responses": [
+        "The tax filing deadline for most individuals is April 15th, unless it falls on a weekend or holiday, in which case it is typically extended to the next business day."
+      ]
+    },
+    {
+      "tag": "commonTaxDeductions",
+      "patterns": [
+        "What are some common tax deductions for individuals?",
+        "Common deductions for taxpayers",
+        "Tax write-offs for individuals"
+      ],
+      "responses": [
+        "Common tax deductions for individuals include mortgage interest, property taxes, state and local taxes, charitable contributions, medical expenses, education expenses, retirement contributions, and certain business expenses for self-employed individuals."
+      ]
+    },
+    {
+      "tag": "taxBenefitsForRetirementSavings",
+      "patterns": [
+        "Are there tax benefits for retirement savings?",
+        "Tax advantages of retirement accounts",
+        "Retirement savings tax breaks"
+      ],
+      "responses": [
+        "Yes, there are tax benefits for retirement savings. Contributions to traditional retirement accounts like 401(k)s and IRAs may be tax-deductible, and investment gains within these accounts grow tax-deferred until withdrawn. Roth retirement accounts offer tax-free withdrawals in retirement."
+      ]
+    },
+    {
+      "tag": "taxBreaksForOwningBusiness",
+      "patterns": [
+        "What are some tax breaks for owning a business?",
+        "Tax deductions for business owners",
+        "Business tax incentives"
+      ],
+      "responses": [
+        "Business owners may qualify for tax breaks such as deductions for business expenses, including operating costs, equipment purchases, employee salaries, health insurance premiums, retirement contributions, and depreciation of assets. Additionally, certain business structures like S corporations and LLCs offer pass-through taxation benefits."
+      ]
+    },
+    {
+      "tag": "planTaxesThroughoutYear",
+      "patterns": [
+        "How can I plan my taxes throughout the year to maximize savings?",
+        "Tax planning strategies",
+        "Year-round tax planning tips"
+      ],
+      "responses": [
+        "To maximize tax savings, consider strategies such as estimating tax liability early in the year, adjusting withholding allowances, making estimated tax payments, reviewing and optimizing deductions and credits, contributing to tax-advantaged accounts, and staying informed about changes in tax laws."
+      ]
+    },
+    {
+      "tag": "resourcesForTaxDeductions",
+      "patterns": [
+        "What are the resources available to help me in tax deductions?",
+        "Tax deduction assistance",
+        "Tools for maximizing tax deductions"
+      ],
+      "responses": [
+        "Resources for maximizing tax deductions include tax preparation software, online tax calculators, IRS publications and forms, tax planning guides from financial institutions, tax professionals such as accountants and tax advisors, and educational resources provided by government agencies and non-profit organizations."
+      ]
+    }
+  
+]}
