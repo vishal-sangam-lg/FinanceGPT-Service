@@ -2,7 +2,6 @@
 # $ conda create --name <env> --file <this file>
 # platform: osx-arm64
 # _tflow_select
-abseil-cpp
 absl-py
 aiohttp
 aiosignal
@@ -16,13 +15,8 @@ async-lru
 attrs
 babel
 beautifulsoup4
-blas
 bleach
 blinker
-brotli-python
-bzip2
-c-ares
-ca-certificates
 cachetools
 certifi
 cffi
@@ -39,15 +33,12 @@ flask-cors
 flatbuffers
 frozenlist
 gast
-giflib
 google-auth
 google-auth-oauthlib
 google-pasta
-grpc-cpp
 grpcio
 gunicorn
 h5py
-hdf5
 icu
 idna
 ipykernel
@@ -56,7 +47,6 @@ itsdangerous
 jedi
 jinja2
 joblib
-jpeg
 json5
 jsonschema
 jsonschema-specifications
@@ -72,20 +62,7 @@ jupyterlab_server
 keras
 keras-preprocessing
 krb5
-libcurl
-libcxx
-libedit
-libev
-libffi
-libgfortran
-libgfortran5
-libnghttp2
-libopenblas
-libpng
-libprotobuf
 libsodium
-libssh2
-llvm-openmp
 markdown
 markupsafe
 matplotlib-inline
@@ -94,15 +71,12 @@ multidict
 nbclient
 nbconvert
 nbformat
-ncurses
 nest-asyncio
 nltk
 notebook
 notebook-shim
 numpy
-numpy-base
 oauthlib
-openssl
 opt_einsum
 overrides
 packaging
