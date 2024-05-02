@@ -5,8 +5,9 @@ import numpy as np
 
 import nltk
 
-nltk.download('punkt')
-nltk.download('wordnet')
+# Comment it out for prod since we don't train the model on the fly
+# nltk.download('punkt')
+# nltk.download('wordnet')
 
 from nltk.stem import WordNetLemmatizer
 
